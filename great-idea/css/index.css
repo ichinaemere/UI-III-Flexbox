@@ -1,8 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +21,7 @@ time, mark, audio, video {
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: flex;
 }
 body {
 	line-height: 1;
@@ -62,15 +57,51 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
+body{
+	margin: 50px;
+	padding: 100px;
+}
 nav{
 	display: flex;
 	justify-content: space-around;
 }
 
-/* nav a{
+nav a{
+	text-decoration: none;
+	color: grey;
+}
+
+.main-header{
 	display: flex;
-	justify-content: space-evenly;
-} */
+	justify-content: center;
+	align-items: center;
+	font-size: 70px;
+	/* border: 1px solid black; */
+}
+
+.middle-container{
+	display: flex;
+	margin: 20px;
+}
+
+.middle-container p{
+	flex-wrap: wrap;
+}
+
+.middle-img{
+	display: flex;
+	justify-content: center;
+}
+.bottom-container{
+	display: flex;
+	margin: 20px;
+}
+
+.bottom-container p{
+	flex-wrap: wrap;
+}
+
+.contact{
+	display:flex;
+	align-items: flex-end;
+}
