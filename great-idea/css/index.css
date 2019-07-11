@@ -58,8 +58,9 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 body{
-	margin: 50px;
-	padding: 100px;
+	margin: 0 auto;
+	width: 880px;
+	
 }
 nav{
 	display: flex;
@@ -82,6 +83,7 @@ nav a{
 .middle-container{
 	display: flex;
 	margin: 20px;
+	border-top: 1px solid black;
 }
 
 .middle-container p{
@@ -99,9 +101,10 @@ nav a{
 
 .bottom-container p{
 	flex-wrap: wrap;
+	margin: 5%;
 }
 
-.contact{
+/* .contact{
 	display:flex;
 	align-items: flex-end;
-}
+} */
